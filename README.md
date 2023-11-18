@@ -59,6 +59,4 @@ Go to the GitHub page of the original repository and click on "Pull request". Cr
 
 Remember to follow the `Code of Conduct` of the project.
 
-That's it! You've just contributed to an open-source project on GitHub!
-
-Please replace `YOUR_USERNAME`, `PROJECT`, and `BRANCH_NAME` with your GitHub username, the name of the project you're contributing to, and your branch name, respectively. Happy coding! 😊.
+ Happy coding! 😊.
