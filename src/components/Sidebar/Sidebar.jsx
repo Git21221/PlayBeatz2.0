@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import "./sidebar.css";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import sidebarContext from "../../context/sidebarContext/sidebarContext";
 import {
   LibraryAddOutlined,
   QueueMusicRounded,
@@ -9,18 +10,20 @@ import {
   ThumbUpOutlined,
 } from "@mui/icons-material";
 function Sidebar() {
+const {clicked} = useContext(sidebarContext);
+const sidebarClass = clicked ? "hidden" : "";
   return (
     <>
-      <div className="side w-max bg-black px-6 py-4 text-white flex flex-col justify-between row-start-2 row-end-3">
+      <div className={`side w-max bg-black px-5 py-4 text-white flex flex-col justify-between row-start-2 row-end-3 ${sidebarClass}`}>
         <div className="upper-nav-part flex flex-col gap-10">
           <ul className="flex gap-3 flex-col">
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `${isActive ? "text-orange-400" : "text-white"}`
+                `${isActive ? "text-orange-500 bg-zinc-800 rounded-lg" : ""}`
               }
             >
-              <li className="flex">
+              <li className="flex hover:bg-zinc-800 py-2 px-3 rounded-lg">
                 <HomeOutlinedIcon />
                 Home
               </li>
@@ -29,10 +32,10 @@ function Sidebar() {
             <NavLink
               to="/search"
               className={({ isActive }) =>
-                `${isActive ? "text-orange-400" : "text-white"}`
+                `${isActive ? "text-orange-500 bg-zinc-800 rounded-lg" : ""}`
               }
             >
-              <li className="flex">
+              <li className="flex hover:bg-zinc-800 py-2 px-3 rounded-lg">
                 <SearchOutlined />
                 Search
               </li>
@@ -40,10 +43,10 @@ function Sidebar() {
             <NavLink
               to="/library"
               className={({ isActive }) =>
-                `${isActive ? "text-orange-400" : "text-white"}`
+                `${isActive ? "text-orange-500 bg-zinc-800 rounded-lg" : ""}`
               }
             >
-              <li className="flex">
+              <li className="flex hover:bg-zinc-800 py-2 px-3 rounded-lg">
                 <LibraryAddOutlined />
                 Your Library
               </li>
@@ -53,10 +56,10 @@ function Sidebar() {
             <NavLink
               to="/play-list"
               className={({ isActive }) =>
-                `${isActive ? "text-orange-400" : "text-white"}`
+                `${isActive ? "text-orange-500 bg-zinc-800 rounded-lg" : ""}`
               }
             >
-              <li className="flex">
+              <li className="flex hover:bg-zinc-800 py-2 px-3 rounded-lg">
                 <QueueMusicRounded />
                 Create Playlist
               </li>
@@ -64,10 +67,10 @@ function Sidebar() {
             <NavLink
               to="/liked-songs"
               className={({ isActive }) =>
-                `${isActive ? "text-orange-400" : "text-white"}`
+                `${isActive ? "text-orange-500 bg-zinc-800 rounded-lg" : ""}`
               }
             >
-              <li className="flex">
+              <li className="flex hover:bg-zinc-800 py-2 px-3 rounded-lg">
                 <ThumbUpOutlined />
                 Liked Songs
               </li>

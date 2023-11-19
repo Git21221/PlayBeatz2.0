@@ -1,8 +1,8 @@
 li{
   font-size: 1.06rem;
   font-weight: 600;
-  gap: 0.7rem;
-  transition: 0.3s all linear;
+  gap: 0.8rem;
+  transition: 0.1s all linear;
 }
 li:hover{
   cursor: pointer;
