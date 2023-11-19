@@ -1,5 +1,6 @@
 import React from "react";
 import {Button, Logoimage, Logoname} from '../index'
+import {Link, NavLink} from 'react-router-dom'
 function Header() {
   return (
     <>

@@ -2,9 +2,40 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { Home, Search, Library, Playlist, Likedsongs } from './components/index.js'
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: '/',
+        element: <Home />
+      },
+      {
+        path: '/search',
+        element: <Search />
+      },
+      {
+        path: '/library',
+        element: <Library />
+      },
+      {
+        path: '/Play-list',
+        element: <Playlist />
+      },
+      {
+        path: '/liked-songs',
+        element: <Likedsongs />
+      },
+    ]
+  }
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </React.StrictMode>,
 )
