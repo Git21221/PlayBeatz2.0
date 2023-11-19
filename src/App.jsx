@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
 import { Header, Footer, Sidebar } from "./components";
-import SidebarContextProvider from "./context/sidebarContext/sidebarcontextProvider";
+import SidebarContextProvider from "./context/sidebarContext/SidebarContextProvider";
 
 function App() {
 
