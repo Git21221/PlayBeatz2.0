@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./sidebar.css";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import sidebarContext from "../../context/sidebarContext/sidebarContext";
+import { useDispatch, useSelector } from "react-redux";
 import {
   LibraryAddOutlined,
   QueueMusicRounded,
@@ -10,8 +11,9 @@ import {
   ThumbUpOutlined,
 } from "@mui/icons-material";
 function Sidebar() {
-const {clicked} = useContext(sidebarContext);
-const sidebarClass = clicked ? "hidden" : "";
+  
+  const sidebarClass = useSelector(state => state.sidebar.open)? "":"hidden";
+
   return (
     <>
       <div className={`side w-max bg-black px-5 py-4 text-white flex flex-col justify-between row-start-2 row-end-3 ${sidebarClass}`}>

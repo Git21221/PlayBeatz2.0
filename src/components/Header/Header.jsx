@@ -1,18 +1,22 @@
 import {React, useState, useContext} from "react";
+import { useDispatch, useSelector } from "react-redux";
 import sidebarContext from "../../context/sidebarContext/sidebarContext";
+import {barClicked} from '../../features/sidebar/sidebarSlice'
 import { Button, Logoimage, Logoname } from "../index";
 import { Link, NavLink } from "react-router-dom";
 
 function Header() {
-  const {clicked, setClicked} = useContext(sidebarContext);
-  const barClicked = () => {
-    clicked ? setClicked(false) : setClicked(true);
+
+  const dispatch = useDispatch();
+  const selector = useSelector(state => state.sidebar.open);
+  const barClick = () => {
+    dispatch(barClicked(!selector));
   }
   return (
     <>
       <div className="navbar bg-black flex items-center justify-between px-6 py-4 col-start-1 col-end-4">
         <div className="leftPart flex items-center gap-6">
-          <div className="bar p-3 hover:bg-zinc-800 rounded-full hover:cursor-pointer" onClick={barClicked}>
+          <div className="bar p-3 hover:bg-zinc-800 rounded-full hover:cursor-pointer" onClick={barClick}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24"
@@ -27,7 +31,7 @@ function Header() {
             </svg>
           </div>
           <div className="flex items-center gap-2 justify-center text-white">
-            <Logoimage imagePath="src/assets/playbeatz.png" width="40" />
+            <Logoimage imagePath="/src/assets/playbeatz.png" width="40" />
             <Logoname />
           </div>
         </div>
