@@ -31,7 +31,7 @@ function Header() {
             </svg>
           </div>
           <div className="flex items-center gap-2 justify-center text-white">
-            <Logoimage imagePath="/src/assets/playbeatz.png" width="40" />
+            <Logoimage imagePath="src\assets\playbeatz.png" width="40" />
             <Logoname />
           </div>
         </div>
