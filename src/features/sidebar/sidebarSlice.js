@@ -11,9 +11,11 @@ export const sidebarSlice = createSlice({
   initialState,
   reducers: {
     barClicked: (state, action) => {
+      
       const bar = {
         open: action.payload
       }
+
       state.sidebar.open = (bar.open);
     },
   }

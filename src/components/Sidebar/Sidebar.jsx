@@ -1,8 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import "./sidebar.css";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import sidebarContext from "../../context/sidebarContext/sidebarContext";
 import { useDispatch, useSelector } from "react-redux";
 import {
   LibraryAddOutlined,
@@ -10,6 +9,7 @@ import {
   SearchOutlined,
   ThumbUpOutlined,
 } from "@mui/icons-material";
+
 function Sidebar() {
   
   const sidebarClass = useSelector(state => state.sidebar.open)? "":"hidden";

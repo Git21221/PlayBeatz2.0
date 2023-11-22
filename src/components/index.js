@@ -9,4 +9,8 @@ import Search from "./Search/Search";
 import Library from './Library/Library'
 import Likedsongs from './Likedsongs/Likedsongs'
 import Playlist from './Playlist/Playlist'
-export { Header, Footer, Sidebar, Button, Logoimage, Logoname, Home, Search, Library, Likedsongs, Playlist }
+import Card from "./Home/card/Card";
+import SongCard from "./Home/songcard/SongCard";
+import Image from "./Image";
+import Text from "./Text";
+export { Header, Footer, Sidebar, Button, Logoimage, Logoname, Home, Search, Library, Likedsongs, Playlist, Card, SongCard, Image, Text }

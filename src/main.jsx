@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import { Home, Search, Library, Playlist, Likedsongs } from './components/index.js'
+import { Home, Search, Library, Playlist, Likedsongs, Card } from './components/index.js'
 
 const router = createBrowserRouter([
   {
@@ -30,6 +30,10 @@ const router = createBrowserRouter([
         path: '/liked-songs',
         element: <Likedsongs />
       },
+      {
+        path: '/:userid',
+        element: <Card />,
+      }
     ]
   }
 ]);
