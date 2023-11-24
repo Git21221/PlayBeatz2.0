@@ -3,7 +3,11 @@ import { useParams } from 'react-router-dom';
 function Card() {
   const {userid} = useParams();
   return (
-    <>Hello {userid}</>
+    <>
+    <h1 className='text-white'>
+      Hello {userid}
+    </h1>
+    </>
   )
 }
 

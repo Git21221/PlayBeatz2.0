@@ -10,7 +10,7 @@ export default {
         'layout': '0.08fr 1fr',
       },
       gridTemplateColumns: {
-        'layout': '0.1fr 1fr',
+        'layout': '1fr',
       }
     },
   },
