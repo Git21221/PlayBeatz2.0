@@ -1,8 +1,8 @@
 import React from "react";
 import "./home.css";
 import { SongCard } from "../index";
-function Home() {
 
+function Home() {
 
   return (
     <>
@@ -18,25 +18,26 @@ function Home() {
           url={"https://www.riskcontrolstrategies.com/wp-content/uploads/2016/07/600x600.png"}
         />
         <SongCard
-          frontname="Sumon Mitra"
+          frontname="Sunny Mishra"
           des="lorem ipsum dolor. ersa yutr"
           url={"https://www.riskcontrolstrategies.com/wp-content/uploads/2016/07/600x600.png"}
         />
         <SongCard
-          frontname="Sumon Mitra"
+          frontname="Anirban Sarkar"
           des="lorem ipsum dolor. ersa yutr"
           url={"https://www.riskcontrolstrategies.com/wp-content/uploads/2016/07/600x600.png"}
         />
         <SongCard
-          frontname="Sumon Mitra"
+          frontname="Vikash Dutta"
           des="lorem ipsum dolor. ersa yutr"
           url={"https://www.riskcontrolstrategies.com/wp-content/uploads/2016/07/600x600.png"}
         />
         <SongCard
-          frontname="Sumon Mitra"
+          frontname="Subhayu kuma"
           des="lorem ipsum dolor. ersa yutr"
           url={"https://www.riskcontrolstrategies.com/wp-content/uploads/2016/07/600x600.png"}
         />
+        
       </div>
     </>
   );

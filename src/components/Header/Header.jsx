@@ -1,6 +1,5 @@
 import {React, useState, useContext} from "react";
 import { useDispatch, useSelector } from "react-redux";
-import sidebarContext from "../../context/sidebarContext/sidebarContext";
 import {barClicked} from '../../features/sidebar/sidebarSlice'
 import { Button, Logoimage, Logoname } from "../index";
 import { Link, NavLink } from "react-router-dom";

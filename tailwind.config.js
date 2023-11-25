@@ -10,8 +10,8 @@ export default {
         'layout': '0.08fr 1fr',
       },
       gridTemplateColumns: {
-        'layout': '1fr',
-      }
+        'layout': 'max-content',
+      },
     },
   },
   plugins: [],
