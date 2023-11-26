@@ -13,8 +13,8 @@ function Header() {
   }
   return (
     <>
-      <div className="navbar bg-black flex items-center justify-between px-6 py-4 col-start-1 col-end-4">
-        <div className="leftPart flex items-center gap-6">
+      <div className="navbar bg-black flex items-center justify-between pr-4 py-4 col-start-1 col-end-4">
+        <div className="leftPart flex items-center gap-4">
           <div className="bar p-3 hover:bg-zinc-800 rounded-full hover:cursor-pointer" onClick={barClick}>
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -10,7 +10,7 @@ export default {
         'layout': '0.08fr 1fr',
       },
       gridTemplateColumns: {
-        'layout': 'max-content',
+        'layout': '0fr',
       },
     },
   },

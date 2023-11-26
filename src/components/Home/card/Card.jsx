@@ -1,10 +1,11 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
+import './card.css'
 function Card() {
   const {userid} = useParams();
   return (
     <>
-    <h1 className='text-white'>
+    <h1 className='hello text-white'>
       Hello {userid}
     </h1>
     </>
