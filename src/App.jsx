@@ -4,7 +4,12 @@ import { Outlet } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
 
+
+
 function App() {
+  // window.addEventListener('change', () => {
+  //   console.log(window);
+  // })
   return (
     <Provider store={store}>
       <div

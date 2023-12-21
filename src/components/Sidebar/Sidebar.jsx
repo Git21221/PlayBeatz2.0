@@ -12,11 +12,11 @@ import {
 
 function Sidebar() {
   
-  const sidebarClass = useSelector(state => state.sidebar.open)? "":"w-0 -z-10";
+  const sidebarClass = useSelector(state => state.sidebar.open)? "w-max":"w-0 -z-10 px-0 py-0";
 
   return (
     <>
-      <div className={`side w-max bg-black px-5 py-4 text-white flex flex-col justify-between row-start-2 row-end-3 ${sidebarClass} z`}>
+      <div className={`side bg-black px-5 py-4 text-white flex flex-col justify-between row-start-2 row-end-3 ${sidebarClass}`}>
         <div className="upper-nav-part flex flex-col gap-10">
           <ul className="flex gap-3 flex-col">
             <NavLink

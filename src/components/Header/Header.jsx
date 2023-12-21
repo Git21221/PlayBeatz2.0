@@ -9,6 +9,7 @@ function Header() {
   const dispatch = useDispatch();
   const selector = useSelector(state => state.sidebar.open);
   const barClick = () => {
+    console.log(window.innerWidth);
     dispatch(barClicked(!selector));
   }
   return (
