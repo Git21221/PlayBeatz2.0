@@ -1,3 +1,6 @@
+.side{
+  height: calc(100vh - 80px);
+}
 li{
   font-size: 1.06rem;
   font-weight: 600;

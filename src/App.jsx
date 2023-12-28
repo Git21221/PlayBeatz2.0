@@ -13,7 +13,7 @@ function App() {
   return (
     <Provider store={store}>
       <div
-        className={`w-screen h-screen main-container grid grid-cols-layout grid-rows-layout bg-zinc-900`}
+        className={`w-screen h-screen main-container grid grid-cols-layout grid-rows-layout`}
       >
         <Header />
         <Outlet />

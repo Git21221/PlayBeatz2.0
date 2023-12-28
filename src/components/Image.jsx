@@ -3,7 +3,7 @@ import React from 'react'
 
 function Image({url, altText, width}) {
   return (
-    <img src={url} alt={altText} style={{aspectRatio: '1 / 1', borderRadius: '10px'}} width={width}/>
+    <img src={url} alt={altText} style={{spectRatio: '1 / 1', borderRadius: '10px'}} width={width}/>
   )
 }
 
