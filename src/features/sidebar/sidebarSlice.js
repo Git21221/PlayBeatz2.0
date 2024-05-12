@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState={
   sidebar: {
-    open: true
+    open: window.innerWidth > 768 ? true : false
   }
 }
 

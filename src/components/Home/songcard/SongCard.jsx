@@ -1,22 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './songcard.css'
 import {Image, Text} from '../../index'
-import { SHA1 } from 'crypto-js'
 function SongCard({frontname, des, url}) {
-  // const namehash = SHA1(frontname);
   return (
     <>
     <Link to={`${frontname}`}>
-      <div className="body-of-card bg-zinc-500 h-max flex flex-col items-center justify-center py-3 gap-2 rounded-lg hover:bg-zinc-800 hover:cursor-pointer">
+      <div className="body-of-card h-max flex flex-col gap-2 rounded-lg lg:w-[160px] md:w-[160px] w-[120px]">
         <div className="image">
           <Image
           url={url}
           alt="1:1 image"
-          width="130"
+          width="160"
           />
         </div>
-        <div className="text p-3">
+        <div className="text w-fit">
           <Text
           name={frontname}
           des={des}

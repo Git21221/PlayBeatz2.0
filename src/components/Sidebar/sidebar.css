@@ -1,16 +1,6 @@
 .side{
   height: calc(100vh - 80px);
 }
-li{
-  font-size: 1.06rem;
-  font-weight: 600;
-  gap: 0.8rem;
-  transition: 0.1s all linear;
-}
-li:hover{
-  cursor: pointer;
-  color: rgb(255, 123, 0);
-}
 .lower-nav-part ul li {
   font-size: 0.6rem;
 }
